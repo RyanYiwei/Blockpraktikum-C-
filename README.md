@@ -1,2 +1,2 @@
 ## Blockpraktikum C++
-This repository includes the codes that I write while taking the course Blockpraktikum C++ in TU Munich. Some Codes are written for understanding the syntax of C++.
+This repository contains the codes that I write while taking the course Blockpraktikum C++ at TU Munich. Most of the codes is not intended for practical use but rather for understanding the syntax of C++.
