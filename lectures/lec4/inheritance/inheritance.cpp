@@ -12,10 +12,20 @@ private:
 
 class child: public human {
 public:
-    using human::human;
+    child(int age):human(age){};
+    child(int age, std::string parent):human(age), _parent(parent){};
+    void print_parent(){
+        std::cout << _parent << std::endl;
+    }
+private:
+    std::string _parent;
 };
 
 int main(){
-    child c(10);
+    child c=child(10);
     c.printAge();
+    c.print_parent();
+    child c2 = child(10, "David");
+    c2.printAge();
+    c2.print_parent();
 }
