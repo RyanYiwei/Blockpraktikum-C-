@@ -22,10 +22,17 @@ namespace ns{
         }
     }
 }
+inline namespace NS{
+    void print(){
+        using std::cout, std::endl;
+        cout << "This is print function from NS." << endl;
+    }
+}
 
 int main(){
     ns::print();
     ns::print2();
     ns::ns2::print();
-    return 1;
+    print();
+    return 0;
 }

@@ -13,7 +13,6 @@ void int_func(int a, int b, void (*f)(int, int)){
 int main(){
     int_func(10, 20, print);
     void (*func_ptr)(int, int) = &print;
-    std::cout << &print << std::endl;
-    std::cout << func_ptr << std::endl;
     (*func_ptr)(30, 40);
+    func_ptr(30, 40);
 }
